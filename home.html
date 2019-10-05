@@ -3,7 +3,7 @@
     <link rel="stylesheet" href="home.css">
     <script src="home.js"></script>
 </head>
-<body>
+<body class="homePage">
     <header>
     <nav>
         <ol>
@@ -13,14 +13,23 @@
     </nav>
 </header>
 
-<article>
+<section>
     <h1>My first website by Scratch</h1>
-    <form>
-        <input type="text" name="firstName" id="firstName">
-        <input type="text" name="lastName" id="lastName">
-        <input type="text" name="age" id="age">
-    </form>
-</article>
+    <form class="contactForm">
+        First Name: <br><input type="text" name="firstName" id="firstName" class="singleInput" placeholder="Enter your first name"><br>
+        Last Name: <br><input type="text" name="lastName" id="lastName" class="singleInput" placeholder="Enter your last name"><br>
+        Age: <br><input type="number" name="age" id="age" class="singleInput" placeholder="Enter your age"><br>
+        Phone Number: <br><input type="number" name="phoneNumber" id="phoneNumber" class="singleInput" placeholder="Enter your phone number">
+    </form><br>
+    <br><button onclick="contactForm()">Submit</button>
+</section>
+<section>
+    <article>
+        <p id="pushFullName"></p>
+        <p id="pushAge"></p>
+        <p id="pushNumber"></p>
+    </article>
+</section>
 <footer>
 
 </footer>
