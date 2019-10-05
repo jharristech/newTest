@@ -6,6 +6,7 @@
 }
 .classyNav {
     display: inline;
+    padding: .5em .75em;
 }
 .contactForm {
     display: inline-block;
